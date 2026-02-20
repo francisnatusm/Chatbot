@@ -22,6 +22,16 @@ Your API key will look something like this: AIzaSyAtpnKGX13bTgmx0l_gQeatYvdWvY_w
 1. Save the `script.js` file after adding your API key.
 2. Open `index.html` in your browser to verify that Chatbot is working correctly.
 
+## Run Locally
+
+1. Clone the repository:
+	```bash
+	git clone https://github.com/francisnatusm/Chatbot.git
+	cd Chatbot
+	```
+2. Open `script.js` and set your API key in `API_KEY`.
+3. Run the app by opening `index.html` in your browser.
+
 ## Important Information
 
 This chatbot uses the Gemini beta model, gemini-2.0-flash, which allows more free requests within a shorter timeframe. If you need greater reliability, you can switch to the stable model, gemini-2.5-pro. While the free version of this model has stricter request limits, upgrading to a paid plan will remove these restrictions.
