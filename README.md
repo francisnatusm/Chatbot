@@ -1,6 +1,8 @@
 # Chatbot Project Setup Guide
 
-If you encounter an error like "API key not valid. Please pass a valid API key." while chatting with the chatbot, please follow these steps:
+## Live Demo
+
+Try the chatbot online: **[Live Demo](https://chatbot-francisnatusm.vercel.app)**
 
 ## Get Your API Key
 
@@ -9,17 +11,6 @@ If you encounter an error like "API key not valid. Please pass a valid API key."
 
 **Note:** The API is free but has a limited number of usage requests.
 
-## Insert Your API Key
-
-1. Open your project folder in VS Code.
-2. Locate to the `script.js` file in your project.
-3. Find the `API_KEY` variable and replace `PASTE-YOUR-API-KEY` with your actual API key.
-
-## Save and Test
-
-1. Save the `script.js` file after adding your API key.
-2. Open `index.html` in your browser to verify that Chatbot is working correctly.
-
 ## Run Locally
 
 1. Clone the repository:
@@ -27,8 +18,21 @@ If you encounter an error like "API key not valid. Please pass a valid API key."
 	git clone https://github.com/francisnatusm/Chatbot.git
 	cd Chatbot
 	```
-2. Open `script.js` and set your API key in `API_KEY`.
-3. Run the app by opening `index.html` in your browser.
+2. Open `script.js` and replace `PASTE-YOUR-API-KEY` with your actual API key.
+3. Open `index.html` in your browser.
+
+## Deploy to Vercel
+
+The live demo uses a Vercel serverless function so your API key stays on the server.
+
+1. Push this repo to GitHub.
+2. Go to [Vercel](https://vercel.com/new) and import the `francisnatusm/Chatbot` repository.
+3. Add an environment variable:
+   - **Name:** `GEMINI_API_KEY`
+   - **Value:** your Gemini API key
+4. Click **Deploy**.
+
+After deployment, add your live URL to the **Live Demo** link at the top of this README.
 
 ## Important Information
 
@@ -36,10 +40,7 @@ This chatbot uses the Gemini model `gemini-2.5-flash`, which is fast and works w
 
 If you need greater reliability for complex answers, you can switch to the stable model `gemini-2.5-pro`. While the free version of this model has stricter request limits, upgrading to a paid plan will remove these restrictions.
 
-To switch to the gemini-2.5-pro stable model, update the API_URL in the `script.js` file as follows:
-```javascript
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-pro:generateContent?key=${API_KEY}`;
-```
+To switch to the gemini-2.5-pro stable model, update the model name in `api/chat.js` (for Vercel) or in `script.js` (for local use).
 
 If you still get an error or get stuck, feel free to message me on LinkedIn: www.linkedin.com/in/francis-natus-mugisha-66415529a
 
