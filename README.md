@@ -2,9 +2,7 @@
 
 ## Live Demo
 
-After you deploy to Vercel, add your live link here:
-
-**[Live Demo](https://your-vercel-url.vercel.app)** ← replace with your real Vercel URL
+Try the chatbot online: **[Live Demo](https://chatbot-ten-red-65.vercel.app/)**
 
 ## Get Your API Key
 
