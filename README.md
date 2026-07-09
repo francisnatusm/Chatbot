@@ -21,19 +21,6 @@ Try the chatbot online: **[Live Demo](https://chatbot-ten-red-65.vercel.app/)**
 2. Open `script.js` and replace `PASTE-YOUR-API-KEY` with your actual API key.
 3. Open `index.html` in your browser.
 
-## Deploy to Vercel
-
-The live demo uses a Vercel serverless function so your API key stays on the server.
-
-1. Push this repo to GitHub.
-2. Go to [Vercel](https://vercel.com/new) and import the `francisnatusm/Chatbot` repository.
-3. Add an environment variable:
-   - **Name:** `GEMINI_API_KEY`
-   - **Value:** your Gemini API key
-4. Click **Deploy**.
-
-After deployment, add your live URL to the **Live Demo** link at the top of this README.
-
 ## Important Information
 
 This chatbot uses the Gemini model `gemini-2.5-flash`, which is fast and works well for chatbots. Google shut down `gemini-2.0-flash` in June 2026, so make sure your `API_URL` uses a current model name.
