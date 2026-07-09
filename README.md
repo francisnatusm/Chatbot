@@ -2,7 +2,9 @@
 
 ## Live Demo
 
-Try the chatbot online: **[Live Demo](https://chatbot-francisnatusm.vercel.app)**
+After you deploy to Vercel, add your live link here:
+
+**[Live Demo](https://your-vercel-url.vercel.app)** ← replace with your real Vercel URL
 
 ## Get Your API Key
 
