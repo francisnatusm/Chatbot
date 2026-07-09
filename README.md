@@ -32,10 +32,14 @@ If you encounter an error like "API key not valid. Please pass a valid API key."
 
 ## Important Information
 
-This chatbot uses the Gemini beta model, gemini-2.0-flash, which allows more free requests within a shorter timeframe. If you need greater reliability, you can switch to the stable model, gemini-2.5-pro. While the free version of this model has stricter request limits, upgrading to a paid plan will remove these restrictions.
+This chatbot uses the Gemini model `gemini-2.5-flash`, which is fast and works well for chatbots. Google shut down `gemini-2.0-flash` in June 2026, so make sure your `API_URL` uses a current model name.
+
+If you need greater reliability for complex answers, you can switch to the stable model `gemini-2.5-pro`. While the free version of this model has stricter request limits, upgrading to a paid plan will remove these restrictions.
 
 To switch to the gemini-2.5-pro stable model, update the API_URL in the `script.js` file as follows:
+```javascript
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-pro:generateContent?key=${API_KEY}`;
+```
 
 If you still get an error or get stuck, feel free to message me on LinkedIn: www.linkedin.com/in/francis-natus-mugisha-66415529a
 
